@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.cef84231.css",
-    "main.js": "/static/js/main.c6ea8aba.js",
-    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.cef84231.css.map": "/static/css/main.cef84231.css.map",
-    "main.c6ea8aba.js.map": "/static/js/main.c6ea8aba.js.map",
-    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/missmuyanna.github.io/static/css/main.fa082420.css",
+    "main.js": "/missmuyanna.github.io/static/js/main.43cc0d89.js",
+    "static/js/453.acca0757.chunk.js": "/missmuyanna.github.io/static/js/453.acca0757.chunk.js",
+    "static/media/logo.svg": "/missmuyanna.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/missmuyanna.github.io/index.html",
+    "main.fa082420.css.map": "/missmuyanna.github.io/static/css/main.fa082420.css.map",
+    "main.43cc0d89.js.map": "/missmuyanna.github.io/static/js/main.43cc0d89.js.map",
+    "453.acca0757.chunk.js.map": "/missmuyanna.github.io/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cef84231.css",
-    "static/js/main.c6ea8aba.js"
+    "static/css/main.fa082420.css",
+    "static/js/main.43cc0d89.js"
   ]
 }
