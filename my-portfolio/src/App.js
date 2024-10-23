@@ -2,6 +2,19 @@
 import './App.css';
 // Importamos el logo de React. Este archivo "logo.svg" viene por defecto al crear un proyecto de React.
 import logo from './logo.svg';
+// importar hashrouter 
+import { HashRouter as Router } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
+import React from 'react';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
+);
 
 // Definimos el componente principal de la aplicación, llamado "App".
 // En React, los componentes son funciones o clases que devuelven código JSX, que es una mezcla de HTML y JavaScript.
@@ -30,4 +43,3 @@ function App() {
 // Exportamos el componente "App" para que pueda ser utilizado en otros archivos de la aplicación.
 // Es necesario exportarlo para que React pueda renderizar este componente en la aplicación.
 export default App;
-
