@@ -34,7 +34,7 @@ function App() {
       {/* Footer o pie de página */}
       <footer>
         {/* Información de contacto */}
-        <p>Contacto: fabiannajulio@gmail.com</p>
+        <p>hola xd</p>
       </footer>
     </div>
   );
