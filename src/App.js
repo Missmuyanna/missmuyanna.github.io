@@ -24,11 +24,10 @@ root.render(
 //funcion de carga del sppiner
 function LoadingSpinner() {
   return (
-    <div className="lds-circle">
-      <div></div>
-    </div>
+    <div className="lds-hourglass"></div>
   );
 }
+
 
 // Definimos el componente principal de la aplicación, llamado "App".
 // En React, los componentes son funciones o clases que devuelven código JSX, que es una mezcla de HTML y JavaScript.
