@@ -21,6 +21,18 @@ h1, p, ul {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.mi-foto {
+  width: 200px; /* Ajusta el ancho */
+  height: auto; /* Para mantener la proporción */
+  border-radius: 50%; /* Si quieres una imagen circular */
+  display: block; /* Para controlar el flujo */
+  margin: 0 auto; /* Para centrar horizontalmente */
+}
+
+.mi-foto-container {
+  text-align: center; /* Centra el contenido del div */
+  padding: 20px; /* Ajusta el espaciado */
+}
 
 .App-header {
   min-height: 100vh;
@@ -47,3 +59,38 @@ h1, p, ul {
     transform: rotate(360deg);
   }
 }
+/* lo de la pantalla de carga */
+
+.lds-circle,
+.lds-circle div {
+  box-sizing: border-box;
+}
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  background: currentColor;
+  border-radius: 50%;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
