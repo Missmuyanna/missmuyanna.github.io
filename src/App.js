@@ -44,7 +44,12 @@ function App() {
   }, []);
   // Aquí retornamos el HTML que se va a renderizar en la página.
   return (
+    //poner la parte de arriba con mi nombre
+     
     <div>
+      <div className='nombre-header'>
+      <h1>Fabianna julio</h1>
+      </div>
       {loading ? (
         // Mostrar spinner mientras loading es true
         <LoadingSpinner />
@@ -55,7 +60,7 @@ function App() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          height: '100vh',
+          height: '100vh',   
           margin: 0
         }}>
           <div className="mi-foto-container">
