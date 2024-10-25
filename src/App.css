@@ -21,6 +21,7 @@ h1, p, ul {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/*mi foto personal*/
 .mi-foto {
   width: 200px; /* Ajusta el ancho */
   height: auto; /* Para mantener la proporción */
@@ -31,7 +32,7 @@ h1, p, ul {
 
 .mi-foto-container {
   position: absolute; /* Para poder posicionar la imagen libremente */
-  top: 10%; /* Ajusta la distancia desde la parte superior */
+  top: 17%; /* Ajusta la distancia desde la parte superior */
   left: 30px; /* Mueve la imagen hacia la izquierda */
 }
 
@@ -115,4 +116,96 @@ h1, p, ul {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+}
+/* esto es todo sobre lo de sobre mi y eso de la pagina
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;  /* Suaviza el desplazamiento entre secciones */
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(5, 27, 126, 0.76);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #0073e6;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #0073e6;
+}
+
+/* Estilos para las secciones */
+.section {
+  height: 100vh; /* Cada sección ocupa la pantalla completa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.inicio {
+  background-color: #f2f2f2;
+}
+
+.sobre-mi {
+  background-color: #e6e6e6;
+}
+
+.portfolio {
+  background-color: #cccccc;
+}
+
+.contacto {
+  background-color: #b3b3b3;
+}
+
+/* Ajustar el tamaño del logo */
+.logo-img {
+  width: 80px;  /* Cambia el tamaño según lo que necesites, por ejemplo, más pequeño */
+  height: auto;  /* Mantiene la proporción de la imagen */
+  margin-left: 0px; /* Espacio hacia la izquierda */
+}
+/* edicion del video  */
+/* Video en el fondo de la sección */
+/* Ajustes generales para la estructura de la página */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

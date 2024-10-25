@@ -56,7 +56,6 @@ function App() {
       ) : (
         // Mostrar el contenido cuando la carga termine (loading es false)
         <div style={{ 
-          backgroundImage: `url(${process.env.PUBLIC_URL + '/images/gatos.jpg'})`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -67,6 +66,45 @@ function App() {
             <img src={MiFoto} alt="Mi foto" className="mi-foto" />
           </div>
 
+
+           <div className="App">
+            <header className="header">
+              <div className="logo">
+              <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo" className="logo-img" />
+          </div>
+        <nav className="nav">
+          <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Sección de Inicio */}
+      <section id="inicio" className="section inicio">
+        <h2>Bienvenidos a mi página</h2>
+      </section>
+
+      {/* Sección Sobre Mí */}
+      <section id="sobre-mi" className="section sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Información sobre mí...</p>
+      </section>
+
+      {/* Sección Portfolio */}
+      <section id="portfolio" className="section portfolio">
+        <h2>Mi Portfolio</h2>
+        <p>Proyectos realizados...</p>
+      </section>
+
+      {/* Sección Contacto */}
+      <section id="contacto" className="section contacto">
+        <h2>Contacto</h2>
+        <p>Mis redes sociales y forma de contacto.</p>
+      </section>
+    </div>       
           {/* Footer o pie de página */}
           <footer>
             {/* Información de contacto */}
