@@ -47,9 +47,6 @@ function App() {
     //poner la parte de arriba con mi nombre
      
     <div>
-      <div className='nombre-header'>
-      <h1>Fabianna julio</h1>
-      </div>
       {loading ? (
         // Mostrar spinner mientras loading es true
         <LoadingSpinner />
@@ -84,7 +81,8 @@ function App() {
 
       {/* Sección de Inicio */}
       <section id="inicio" className="section inicio">
-        <h2>Bienvenidos a mi página</h2>
+        <h2 className="nombre-header">Fabianna Julio</h2>
+        <h2 className="bienvenida-header">Bienvenidos a mi página</h2>
       </section>
 
       {/* Sección Sobre Mí */}
