@@ -81,6 +81,10 @@ function App() {
 
       {/* Sección de Inicio */}
       <section id="inicio" className="section inicio">
+        {/* Video de fondo */}
+        <video autoPlay loop muted playsInline className="video-background">
+          <source src={`${process.env.PUBLIC_URL}/videos/teddy.mp4`} type="video/mp4" />
+        </video>
         <h2 className="nombre-header">Fabianna Julio</h2>
         <h2 className="bienvenida-header">Bienvenidos a mi página</h2>
       </section>
