@@ -12,6 +12,8 @@ import React from 'react';
 
 // La ruta de la imagen que está en la carpeta public
 const MiFoto = `${process.env.PUBLIC_URL}/images/mifoto.jpg`;
+//seccion sobre mi
+const backgroundVideoSobreMi = `${process.env.PUBLIC_URL}/videos/fondito.mp4`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -91,8 +93,18 @@ function App() {
 
       {/* Sección Sobre Mí */}
       <section id="sobre-mi" className="section sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Información sobre mí...</p>
+        <video
+          autoPlay
+          loop
+          muted
+          className="background-video"
+        >
+          <source src={backgroundVideoSobreMi} type="video/mp4" />
+        </video>
+        <div className="text-background">
+          <h2>Sobre Mí</h2>
+          <p>Información sobre mí...</p>
+        </div>
       </section>
 
       {/* Sección Portfolio */}
