@@ -32,12 +32,12 @@ h1, p, ul {
 
 .mi-foto-container {
   position: absolute; /* Para poder posicionar la imagen libremente */
-  top: 17%; /* Ajusta la distancia desde la parte superior */
+  top: 15%; /* Ajusta la distancia desde la parte superior */
   left: 30px; /* Mueve la imagen hacia la izquierda */
 }
 
 .mi-foto {
-  width: 400px; /* Cambia el tamaño de la imagen */
+  width: 370px; /* Cambia el tamaño de la imagen */
   height: auto; /* Mantiene la proporción correcta */
   border-radius: 40%; /* Si quieres hacer la imagen circular */
 }
@@ -116,6 +116,7 @@ html, body {
   padding: 0px;
   background-color: rgba(5, 27, 126, 0.74);
   box-shadow: 0 2px 5px rgb(141, 219, 240);
+  z-index: 10; /* Elevar el nivel del menú sobre otros elementos */
 }
 
 .logo h1 {
@@ -156,6 +157,16 @@ html, body {
 }
 
 .sobre-mi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .portfolio {
@@ -210,18 +221,6 @@ body, html {
 }
 
 /* background de la section sobre mi*/
-.sobre-mi {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-  overflow: hidden;
-}
 
 .background-video {
   position: absolute;
