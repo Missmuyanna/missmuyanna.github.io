@@ -14,6 +14,8 @@ import React from 'react';
 const MiFoto = `${process.env.PUBLIC_URL}/images/mifoto.jpg`;
 //seccion sobre mi
 const backgroundVideoSobreMi = `${process.env.PUBLIC_URL}/videos/fondito.mp4`;
+const backgroundVideoPortfolio = `${process.env.PUBLIC_URL}/videos/portfolio.mp4`;
+const backgroundVideoContacto = `${process.env.PUBLIC_URL}/videos/contacto.mp4`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +31,6 @@ function LoadingSpinner() {
     <div className="lds-hourglass"></div>
   );
 }
-
 
 // Definimos el componente principal de la aplicación, llamado "App".
 // En React, los componentes son funciones o clases que devuelven código JSX, que es una mezcla de HTML y JavaScript.
@@ -97,7 +98,7 @@ function App() {
           autoPlay
           loop
           muted
-          className="background-video"
+          className="background-video-sobremi"
         >
           <source src={backgroundVideoSobreMi} type="video/mp4" />
         </video>
@@ -109,14 +110,34 @@ function App() {
 
       {/* Sección Portfolio */}
       <section id="portfolio" className="section portfolio">
+      <video
+          autoPlay
+          loop
+          muted
+          className="background-video-portfolio"
+        >
+          <source src={backgroundVideoPortfolio} type="video/mp4" />
+        </video>
+        <div className="text-background-portfolio">
         <h2>Mi Portfolio</h2>
         <p>Proyectos realizados...</p>
+        </div>
       </section>
 
       {/* Sección Contacto */}
       <section id="contacto" className="section contacto">
+      <video
+          autoPlay
+          loop
+          muted
+          className="background-video-contacto"
+        >
+          <source src={backgroundVideoContacto} type="video/mp4" />
+        </video>
+        <div className="text-background-contacto">
         <h2>Contacto</h2>
         <p>Mis redes sociales y forma de contacto.</p>
+        </div>
       </section>
     </div>       
           {/* Footer o pie de página */}

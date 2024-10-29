@@ -169,12 +169,10 @@ html, body {
   overflow: hidden;
 }
 
-.portfolio {
-  background-color: #cccccc;
+.portfolio { 
 }
 
 .contacto {
-  background-color: #b3b3b3;
 }
 
 /* Ajustar el tamaño del logo */
@@ -209,7 +207,7 @@ body, html {
   font-size: 1.5rem; /* Tamaño del texto de bienvenida */
 }
 
-/* Video de fondo */
+/* Video de fondo  de la zona de Inicio*/
 .video-background {
   position: absolute;
   top: 0;
@@ -219,10 +217,9 @@ body, html {
   object-fit: cover;
   z-index: -1; /* Envía el video al fondo para que no tape los textos */
 }
-
 /* background de la section sobre mi*/
 
-.background-video {
+.background-video-sobremi {
   position: absolute;
   top: 0;
   left: 0;
@@ -231,11 +228,58 @@ body, html {
   object-fit: cover;
   z-index: -1;
 }
-.text-background {
+.text-background-sobremi {
   position: relative;
   background-color: rgba(0, 0, 0, 0.441); /* Fondo semi-transparente */
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
   z-index: 1;
+}
+
+/* Video de fondo para la sección Portfolio */
+.background-video-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Hace que el video esté detrás del contenido */
+}
+
+.text-background-portfolio {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  padding: 20px;
+}
+
+/* Video de fondo para la sección contacto*/
+.background-video-contacto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Hace que el video esté detrás del contenido */
+}
+
+.text-background-contacto {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  padding: 20px;
+}
+
+
+
+/* Sección general para asegurarse de que el video no se extienda más allá de su sección */
+.section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; /* Evita que el contenido se salga de la sección */
 }
