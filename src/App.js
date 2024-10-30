@@ -1,22 +1,24 @@
 //importar el use estates de react para el tiempo
 import { useState, useEffect } from 'react';
-
-// Importamos el archivo de estilos styles.css para aplicarle diseño a los componentes HTML.
+// Importamos el archivo de estilos css para aplicarle diseño a los componentes HTML.
 import './App.css';
-// Importamos el logo de React. Este archivo "logo.svg" viene por defecto al crear un proyecto de React.
-import logo from './logo.svg';
 // importar hashrouter 
 import { HashRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
+// importar de formulario de forms
+import ContactoForm from './ContactoForm';
 
-// La ruta de la imagen que está en la carpeta public
+// La ruta de mi foto  que está en la carpeta public
 const MiFoto = `${process.env.PUBLIC_URL}/images/mifoto.jpg`;
-//seccion sobre mi
+//fondo seccion sobre mi
 const backgroundVideoSobreMi = `${process.env.PUBLIC_URL}/videos/fondito.mp4`;
+//fondo seccion portfolio
 const backgroundVideoPortfolio = `${process.env.PUBLIC_URL}/videos/portfolio.mp4`;
+//fondo seccion contacto
 const backgroundVideoContacto = `${process.env.PUBLIC_URL}/videos/contacto.mp4`;
 
+//para renderizar la pagina web
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -33,7 +35,6 @@ function LoadingSpinner() {
 }
 
 // Definimos el componente principal de la aplicación, llamado "App".
-// En React, los componentes son funciones o clases que devuelven código JSX, que es una mezcla de HTML y JavaScript.
 function App() {
   // Estado para controlar si la página está cargando
   const [loading, setLoading] = useState(true);
@@ -45,10 +46,8 @@ function App() {
     }, 3000);
     return () => clearTimeout(timer); // Limpiar el temporizador
   }, []);
-  // Aquí retornamos el HTML que se va a renderizar en la página.
+  // Aquí retornamos  HTML que se va a renderizar en la página.
   return (
-    //poner la parte de arriba con mi nombre
-     
     <div>
       {loading ? (
         // Mostrar spinner mientras loading es true
@@ -62,16 +61,17 @@ function App() {
           height: '100vh',   
           margin: 0
         }}>
+        {/* MI FOTO PERSONAL */}             
           <div className="mi-foto-container">
             <img src={MiFoto} alt="Mi foto" className="mi-foto" />
           </div>
-
 
            <div className="App">
             <header className="header">
               <div className="logo">
               <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo" className="logo-img" />
           </div>
+          {/* Parte horizontal de navegación */}
         <nav className="nav">
           <ul>
             <li><a href="#inicio">INICIO</a></li>
@@ -81,13 +81,13 @@ function App() {
           </ul>
         </nav>
       </header>
-
       {/* Sección de Inicio */}
       <section id="inicio" className="section inicio">
         {/* Video de fondo */}
         <video autoPlay loop muted playsInline className="video-background">
           <source src={`${process.env.PUBLIC_URL}/videos/teddy.mp4`} type="video/mp4" />
         </video>
+        {/* TEXTO DE INICIO */}
         <h2 className="nombre-header">Fabianna Julio</h2>
         <h2 className="bienvenida-header">Bienvenidos a mi página</h2>
       </section>
@@ -103,6 +103,7 @@ function App() {
           <source src={backgroundVideoSobreMi} type="video/mp4" />
         </video>
         <div className="text-background">
+         {/* TEXTO DE SOBRE MI*/} 
           <h2>Sobre Mí</h2>
           <p>Información sobre mí...</p>
         </div>
@@ -119,6 +120,7 @@ function App() {
           <source src={backgroundVideoPortfolio} type="video/mp4" />
         </video>
         <div className="text-background-portfolio">
+          {/* TEXTO DE PORTFOLIO*/}
         <h2>Mi Portfolio</h2>
         <p>Proyectos realizados...</p>
         </div>
@@ -135,22 +137,18 @@ function App() {
           <source src={backgroundVideoContacto} type="video/mp4" />
         </video>
         <div className="text-background-contacto">
-        <h2>Contacto</h2>
-        <p>Mis redes sociales y forma de contacto.</p>
+            {/* TEXTO DE CONTACTO */}
+          <h2>Dejame tus datos</h2>
+          <p>Me pondré en contacto contigo lo antes posible</p>
+          <ContactoForm />
         </div>
       </section>
-    </div>       
-          {/* Footer o pie de página */}
-          <footer>
-            {/* Información de contacto */}
-            <p>hola xd</p>
-          </footer>
+    </div>          
         </div>
       )}
     </div>
   );
 }
 
-// Exportamos el componente "App" para que pueda ser utilizado en otros archivos de la aplicación.
-// Es necesario exportarlo para que React pueda renderizar este componente en la aplicación.
+// Exportamos el componente App para que pueda ser utilizado en otros archivos de la aplicación.
 export default App;

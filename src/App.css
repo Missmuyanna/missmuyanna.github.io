@@ -1,26 +1,5 @@
-.App {
-  text-align: center;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1, p, ul {
-  margin: 0;
-  padding: 0;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 /*mi foto personal*/
 .mi-foto {
   width: 200px; /* Ajusta el ancho */
@@ -42,18 +21,6 @@ h1, p, ul {
   border-radius: 40%; /* Si quieres hacer la imagen circular */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* lo de la pantalla de carga */
 .lds-hourglass {
   position: absolute;
@@ -119,6 +86,7 @@ html, body {
   z-index: 10; /* Elevar el nivel del menú sobre otros elementos */
 }
 
+
 .logo h1 {
   font-size: 24px;
   color: #0073e6;
@@ -152,29 +120,6 @@ html, body {
   align-items: center;
   padding: 20px;
 }
-
-.inicio {
-}
-
-.sobre-mi {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.portfolio { 
-}
-
-.contacto {
-}
-
 /* Ajustar el tamaño del logo */
 .logo-img {
   width: 80px;  /* Cambia el tamaño según lo que necesites, por ejemplo, más pequeño */
@@ -188,6 +133,10 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* CADA SECCION UNA POR UNA */
+.inicio {
 }
 /* Estilo para el nombre fabianna julio*/
 .nombre-header {
@@ -217,6 +166,20 @@ body, html {
   object-fit: cover;
   z-index: -1; /* Envía el video al fondo para que no tape los textos */
 }
+
+
+.sobre-mi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
 /* background de la section sobre mi*/
 
 .background-video-sobremi {
@@ -237,6 +200,8 @@ body, html {
   z-index: 1;
 }
 
+.portfolio { 
+}
 /* Video de fondo para la sección Portfolio */
 .background-video-portfolio {
   position: absolute;
@@ -256,7 +221,18 @@ body, html {
   padding: 20px;
 }
 
-/* Video de fondo para la sección contacto*/
+
+/* Estilos generales de la sección de contacto */
+.contacto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Video de fondo */
 .background-video-contacto {
   position: absolute;
   top: 0;
@@ -264,17 +240,44 @@ body, html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Hace que el video esté detrás del contenido */
+  z-index: -1;
 }
 
+/* Contenedor del formulario FUNCIONA PERFECTAMENTE*/
 .text-background-contacto {
   position: relative;
   z-index: 1;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.692); /* Fondo semitransparente */
+  padding: 50px;
+  border-radius: 60px;
+  max-width: 300px;
+  width: 130%;
+  margin: auto;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* Posicionamiento libre del formulario  está PERFECTAMENTE*/   
+.text-background-contacto {
+  position: absolute;
+  top: 40%;
+  left: 75%; /* Ajusta el valor para cambiar su posición horizontal */
+  transform: translateY(-50%); /* Centrar verticalmente */
+}
+
+/* Ajustes de tamaño y estilo del formulario */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: calc(100% - 20px); /* Deja un margen interno */
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
 
 
 /* Sección general para asegurarse de que el video no se extienda más allá de su sección */
