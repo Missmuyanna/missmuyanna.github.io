@@ -258,8 +258,6 @@ body, html {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* Posicionamiento libre del formulario  está PERFECTAMENTE*/   
 .text-background-contacto {
   position: absolute;
@@ -269,15 +267,6 @@ body, html {
 }
 
 /* Ajustes de tamaño y estilo del formulario */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: calc(100% - 20px); /* Deja un margen interno */
-  padding: 10px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  color: #333;
-}
 
 
 /* Sección general para asegurarse de que el video no se extienda más allá de su sección */

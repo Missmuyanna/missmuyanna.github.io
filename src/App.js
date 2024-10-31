@@ -8,6 +8,9 @@ import ReactDOM from 'react-dom/client';
 import React from 'react';
 // importar de formulario de forms
 import ContactoForm from './ContactoForm';
+//version de celuco
+import './celu.css';
+
 
 // La ruta de mi foto  que está en la carpeta public
 const MiFoto = `${process.env.PUBLIC_URL}/images/mifoto.jpg`;
